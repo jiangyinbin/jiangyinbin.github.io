@@ -3,17 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives | 涵笑半步癫创始人的技术博客</title>
+  <title>Twitter个性化分享调研 | 涵笑半步癫创始人的技术博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="涵笑半步癫创始人的技术博客、Android技术交流">
-<meta property="og:type" content="website">
-<meta property="og:title" content="涵笑半步癫创始人的技术博客">
-<meta property="og:url" content="http://www.hxbbd.com/archives/index.html">
+  <meta name="description" content="通过接入Twitter的SDK来达到高转化率的个性化社交推广！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Twitter个性化分享调研">
+<meta property="og:url" content="http://www.hxbbd.com/2015/11/10/ShareTwitter/index.html">
 <meta property="og:site_name" content="涵笑半步癫创始人的技术博客">
-<meta property="og:description" content="涵笑半步癫创始人的技术博客、Android技术交流">
+<meta property="og:description" content="通过接入Twitter的SDK来达到高转化率的个性化社交推广！">
+<meta property="og:image" content="http://i.imgur.com/vkk986q.png">
+<meta property="og:updated_time" content="2015-11-10T14:30:10.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="涵笑半步癫创始人的技术博客">
-<meta name="twitter:description" content="涵笑半步癫创始人的技术博客、Android技术交流">
+<meta name="twitter:title" content="Twitter个性化分享调研">
+<meta name="twitter:description" content="通过接入Twitter的SDK来达到高转化率的个性化社交推广！">
   
     <link rel="alternative" href="/atom.xml" title="涵笑半步癫创始人的技术博客" type="application/atom+xml">
   
@@ -192,115 +194,133 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="pages-ShareTwitter" class="article article-type-pages" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-pages">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/11/10/ShareTwitter/" class="archive-article-date">
-  	<time datetime="2015-11-10T13:16:41.000Z" itemprop="datePublished">Nov 10</time>
+    <div class="article-meta">
+      <a href="/2015/11/10/ShareTwitter/" class="article-date">
+  	<time datetime="2015-11-10T13:16:41.000Z" itemprop="datePublished">2015-11-10</time>
 </a>
-        </div>
-    	 
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/11/10/ShareTwitter/">Twitter个性化分享调研</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Twitter个性化分享调研
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 	<div class="article-tag tagcloud">
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SDK/">SDK</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Twitter/">Twitter</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/分享/">分享</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/原创/">原创</a></li></ul>
 	</div>
 
-          
+        
 
-        </div>
         <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
+      </div>
+      
     
-    
-    <article class="archive-article archive-type-pager">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/08/28/PluginTheme/" class="archive-article-date">
-  	<time datetime="2015-08-28T06:54:42.000Z" itemprop="datePublished">Aug 28</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/08/28/PluginTheme/">Android主题、皮肤切换，支持在线安装，可直接替换整个布局</a>
-    </h1>
-  
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>通过接入Twitter的SDK来达到高转化率的个性化社交推广！<br><a id="more"></a></p>
+<blockquote>
+<p>由于调用TwitterSDK需要在开发者后台创建App等，较为麻烦，直接使用我配置好的KEY就行。<br>KEY：vM5RNi5CCodJnL7e5BOA<br>SECRET：FQNS0eBbM8J5DDjDglLCwOvAUUesYhN5uFxdxjKLgk</p>
+</blockquote>
+<h3 id="1-引入Twitter项目包">1.引入Twitter项目包</h3><p>build.gradle添加 <br></p>
+<pre><code><span class="keyword">dependencies</span> {
+    <span class="keyword">compile</span>(<span class="string">'com.twitter.sdk.android:twitter:1.9.1@aar'</span>) {
+        transitive = <span class="keyword">true</span>;
+    }
+}
+</code></pre><blockquote>
+<p>安装官方文档的配置会发现下载不下来，原因是twitter没有把代码放到自己的项目中，而是放到自己的网站上托管了…</p>
+<p>加入Twitter的Maven库就搞定了</p>
+</blockquote>
+<pre><code>repositories {
+    maven{ url <span class="string">'https://maven.fabric.io/repo'</span>}
+}
+</code></pre><p>分享成功和失败的广播回调 <br></p>
+<pre><code><span class="tag">&lt;<span class="title">receiver</span>
+  <span class="attribute">android:name</span>=<span class="value">".MyResultReceiver"</span>
+  <span class="attribute">android:exported</span>=<span class="value">"false"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">intent-filter</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">action</span> <span class="attribute">android:name</span>=<span class="value">"com.twitter.sdk.android.tweetcomposer.UPLOAD_SUCCESS"</span>/&gt;</span>
+        <span class="tag">&lt;<span class="title">action</span> <span class="attribute">android:name</span>=<span class="value">"com.twitter.sdk.android.tweetcomposer.UPLOAD_FAILURE"</span>/&gt;</span>
+      <span class="tag">&lt;/<span class="title">intent-filter</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">receiver</span>&gt;</span>
+</code></pre><h3 id="2-AppLinks">2.<a href="https://docs.fabric.io/android/beta/share-links.html" target="_blank" rel="external">AppLinks</a></h3><p>在Twitter后台配置应用连接，然后使用此连接分享到Twitter即可直接打开自己的App</p>
+<h3 id="3-App_Installs">3.<a href="https://docs.fabric.io/android/twitter/compose-tweets.html#set-up-kit" target="_blank" rel="external">App Installs</a></h3><p>分享到此类型博客到Twitter后点击install及可下载安装，很适合做App推广</p>
+<p><img src="http://i.imgur.com/vkk986q.png" alt=""></p>
+<h3 id="4-TwitterCard">4.<a href="https://dev.twitter.com/cards/overview" target="_blank" rel="external">TwitterCard</a></h3><p>卡片式分享功能可现实多张图片缩略图，标题，作者和文字描述，以及大相册链接等。</p>
+<h3 id="5-分享话题">5.分享话题</h3><p>可以使用一个#号来发布话题，如： #Android6.0大法好</p>
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/主题/">主题</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/原创/">原创</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/插件/">插件</a></li></ul>
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/08/28/PluginTheme/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Android主题、皮肤切换，支持在线安装，可直接替换整个布局</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
 	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/08/19/test01/" class="archive-article-date">
-  	<time datetime="2015-08-19T08:04:48.000Z" itemprop="datePublished">Aug 19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/08/19/test01/">您好！我是小姜，涵笑半步癫创始人！</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/原创/">原创</a></li></ul>
-	</div>
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="ShareTwitter" data-title="Twitter个性化分享调研" data-url="http://www.hxbbd.com/2015/11/10/ShareTwitter/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"hxbbd"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
 
-    
 
 </div>
       <footer id="footer">
@@ -336,8 +356,8 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false
